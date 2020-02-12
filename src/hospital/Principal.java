@@ -31,7 +31,7 @@ public class Principal {
         e.setCoren("sp013per");
         
         Medico m=new Medico();
-        m.setNome("Givaldo");
+        m.setNome("Rafael");
         m.setRg("15.713.859-8");
         m.setCpf("978.803.890-59");
         m.setIdade(40);
@@ -41,7 +41,7 @@ public class Principal {
         m.setEspecialidade("Pediatra");
     
     
-        System.out.println("PACIENTE: "+p.getNome());
+        System.out.println("Paciente: "+p.getNome());
         System.out.println("Idade: "+p.getIdade());
         System.out.println("Rg: "+p.getRg());
         System.out.println("Cpf: "+p.getCpf());
