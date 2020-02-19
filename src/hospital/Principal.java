@@ -20,6 +20,7 @@ public class Principal {
         f.setIdade(54);
         f.setMatricula(422269);
         f.setSenha("deussejalouvado");
+        f.setValorHora(20);
         
         Enfermeiro e=new Enfermeiro();
         e.setNome("Luciana");
@@ -29,6 +30,7 @@ public class Principal {
         e.setMatricula(208944);
         e.setSenha("DeusFielgloria");
         e.setCoren("sp013per");
+        e.setValorHora(25.50);
         
         Medico m=new Medico();
         m.setNome("Rafael");
@@ -39,8 +41,25 @@ public class Principal {
         m.setSenha("sertaomeuamor");
         m.setCrm("sp019rm");
         m.setEspecialidade("Pediatra");
+        m.setValorHora(32.25);
+        
+        Hospital h=new Hospital(10,"Rua Armando Cunha Nº730 Peruibe/SP");
+        h.setNome("Oswaldo Herrera");
+        h.addFuncionario(f);
+        h.addFuncionario(m);
+        h.addFuncionario(e);
+        
+        h.listarEnfermeiro();
+        System.out.println("Coren: "+e.getCoren());
+        System.out.println("--------------------------------------");
+        
+        h.listarMedico();        
+        System.out.println("CRM: "+m.getCrm());
+        System.out.println("Especialidade: "+m.getEspecialidade());
+        System.out.println("--------------------------------------");
     
-    
+        
+        
         System.out.println("Paciente: "+p.getNome());
         System.out.println("Idade: "+p.getIdade());
         System.out.println("Rg: "+p.getRg());
@@ -55,25 +74,9 @@ public class Principal {
         System.out.println("Cpf: "+f.getCpf());
         System.out.println("Matricula: "+f.getMatricula());
         System.out.println("Senha: "+f.getSenha());
+        System.out.println("Salario: R$"+f.calcularSalario());
         System.out.println("--------------------------------------");
         
-        System.out.println("Enfermeiro: "+e.getNome());
-        System.out.println("Idade: "+e.getIdade());
-        System.out.println("Rg: "+e.getRg());
-        System.out.println("Cpf: "+e.getCpf());
-        System.out.println("Matricula: "+e.getMatricula());
-        System.out.println("Senha: "+e.getSenha());
-        System.out.println("Coren: "+e.getCoren());
-        System.out.println("--------------------------------------");
         
-        System.out.println("Médico: "+m.getNome());
-        System.out.println("Idade: "+m.getIdade());
-        System.out.println("Rg: "+m.getRg());
-        System.out.println("Cpf: "+m.getCpf());
-        System.out.println("Matricula: "+m.getMatricula());
-        System.out.println("Senha: "+m.getSenha());
-        System.out.println("CRM: "+m.getCrm());
-        System.out.println("Especialidade: "+m.getEspecialidade());
-        System.out.println("--------------------------------------");
     }
 }

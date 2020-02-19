@@ -42,7 +42,13 @@ public class Hospital {
     public void listarMedico(){
         for (int i = 0; i < funcionario.size(); i++) {
             if(funcionario.get(i) instanceof Medico){
-                System.out.println(funcionario.get(i));
+                System.out.println("Médico: "+funcionario.get(i).getNome());
+                System.out.println("Idade: "+funcionario.get(i).getIdade());
+                System.out.println("Rg: "+funcionario.get(i).getRg());
+                System.out.println("Cpf: "+funcionario.get(i).getCpf());
+                System.out.println("Matricula: "+funcionario.get(i).getMatricula());
+                System.out.println("Senha: "+funcionario.get(i).getSenha());
+                System.out.println("Salario: R$"+funcionario.get(i).calcularSalario());
             }
         }
     }
@@ -50,7 +56,13 @@ public class Hospital {
     public void listarEnfermeiro(){
         for (int i = 0; i < funcionario.size(); i++) {
             if(funcionario.get(i) instanceof Enfermeiro){
-                System.out.println(funcionario.get(i));
+                System.out.println("Enfermeiro: "+funcionario.get(i).getNome());
+                System.out.println("Idade: "+funcionario.get(i).getIdade());
+                System.out.println("Rg: "+funcionario.get(i).getRg());
+                System.out.println("Cpf: "+funcionario.get(i).getCpf());
+                System.out.println("Matricula: "+funcionario.get(i).getMatricula());
+                System.out.println("Senha: "+funcionario.get(i).getSenha());
+                System.out.println("Salario: R$"+funcionario.get(i).calcularSalario(25.50));
             }
         }
     }
