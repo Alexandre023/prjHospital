@@ -20,4 +20,9 @@ public class Medico extends Funcionário{
         this.especialidade = especialidade;
     }
     
+    @Override
+    public double gerarBonus(){
+        return calcularSalario()*0.3;
+    }
+    
 }
