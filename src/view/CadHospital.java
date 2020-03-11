@@ -116,7 +116,7 @@ public class CadHospital extends javax.swing.JFrame {
     }//GEN-LAST:event_txtEnderecoActionPerformed
 
     private void btnCadastarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadastarActionPerformed
-        // TODO add your handling code here:
+         
     }//GEN-LAST:event_btnCadastarActionPerformed
 
     /**
